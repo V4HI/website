@@ -15,4 +15,4 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseProjectId: 'vista4healthinsurance'  # غيّر إلى معرف مشروع Firebase الخاص بك
+          projectId: 'vista4healthinsurance' # غيّر إلى معرف مشروع Firebase الخاص بك
