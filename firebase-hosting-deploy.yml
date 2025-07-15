@@ -3,14 +3,14 @@ name: Firebase Hosting Deploy
 on:
   push:
     branches:
-      - master
+      - master  # كل مرة تعمل فيها push على فرع master، يتم تشغيل النشر التلقائي
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: actions/checkout@v3  # ينسخ ملفات المشروع
+      - uses: FirebaseExtended/action-hosting-deploy@v0  # خطوة النشر
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          projectId: 'vista4healthinsurance'
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'  # توكن GitHub
+          projectId: 'vista4healthinsurance'  # معرف مشروع Firebase الخاص بك
