@@ -3,7 +3,7 @@ name: Firebase Hosting Deploy
 on:
   push:
     branches:
-      - master   # فرع النشر التلقائي
+      - master
 
 jobs:
   build-and-deploy:
@@ -15,4 +15,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          projectId: 'vista4healthinsurance' # غيّر إلى معرف مشروع Firebase الخاص بك
+          projectId: 'vista4healthinsurance'
+          target: 'vista4healthinsurance'  # اسم الموقع على Firebase Hosting
