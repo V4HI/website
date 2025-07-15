@@ -2,6 +2,12 @@
   "projects": {
     "default": "vista4healthinsurance"
   },
-  "targets": {},
+  "targets": {
+    "vista4healthinsurance": {
+      "hosting": {
+        "vista4healthinsurance": ["vista4healthinsurance"]
+      }
+    }
+  },
   "etags": {}
 }
